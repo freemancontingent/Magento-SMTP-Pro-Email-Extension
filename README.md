@@ -18,6 +18,10 @@ FAQ
 Q: It's not working
 A: Check for extension conflicts, and check that your host allows outbound SMTP traffic
 
+Q: It's not working (I'm using Amazon SES)
+A: Ensure that the region endpoint has been set to suit your needs. (app/code/local/Aschroder/SMTPPro/lib/AmazonSES.php) change $host in __construct. See http://docs.aws.amazon.com/ses/latest/DeveloperGuide/regions.html for valid endpoints.
+(Edit by http://freemancontingent.ie)
+
 Q: Does it work with the Mailchimp extension
 A: yes, see: http://www.aschroder.com/2011/09/using-smtp-pro-and-ebizmarts-mailchimp-extension-in-magento/
 
