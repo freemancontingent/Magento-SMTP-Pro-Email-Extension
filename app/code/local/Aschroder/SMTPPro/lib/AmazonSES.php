@@ -54,8 +54,8 @@ class App_Mail_Transport_AmazonSES extends Zend_Mail_Transport_Abstract
      * @throws Zend_Mail_Transport_Exception if accessKey is not present in the config
      * @throws Zend_Mail_Transport_Exception if privateKey is not present in the config
      */
-    //Update To Allow for EU SES Region :: https://email-smtp.eu-west-1.amazonaws.com
-    public function __construct(Array $config = array(), $host = 'https://email-smtp.eu-west-1.amazonaws.com')
+    //Update To Allow for EU SES Region :: https://email.eu-west-1.amazonaws.com
+    public function __construct(Array $config = array(), $host = 'https://email.eu-west-1.amazonaws.com')
     {
         if(!array_key_exists('accessKey', $config)){
             throw new Zend_Mail_Transport_Exception('This transport requires the Amazon access key');
